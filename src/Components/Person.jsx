@@ -1,8 +1,11 @@
-function Person() {
+function Person(props) {
     return (
-        <>
-            <h1>Hello from person!</h1>
-        </>
+        <div>
+            <h1>Hello from {props.name}!</h1>
+            <p>Name: {props.name}</p>
+            <p>Age: {props.age}</p>
+            <p>Fav Color: {props.favColor}</p>
+        </div>
     )
 }
 

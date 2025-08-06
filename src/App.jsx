@@ -2,6 +2,7 @@ import ChangeName from "./Components/ChangeName";
 import Counter from "./Components/Counter";
 import Events from "./Components/Events";
 import Timer from "./Components/Timer";
+import Toggle from "./Components/Toggle";
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       {/* <Events /> */}
       {/* <ChangeName name="Rohini" /> */}
       {/* <Counter /> */}
-      <Timer />
+      {/* <Timer /> */}
+      <Toggle />
     </>
   )
 }

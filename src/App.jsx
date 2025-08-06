@@ -1,3 +1,4 @@
+import ColourChange from "./ColourChange";
 import ChangeName from "./Components/ChangeName";
 import Counter from "./Components/Counter";
 import Events from "./Components/Events";
@@ -13,7 +14,8 @@ function App() {
       {/* <ChangeName name="Rohini" /> */}
       {/* <Counter /> */}
       {/* <Timer /> */}
-      <Toggle />
+      {/* <Toggle /> */}
+      <ColourChange />
     </>
   )
 }

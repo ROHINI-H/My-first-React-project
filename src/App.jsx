@@ -1,4 +1,5 @@
 import ColourChange from "./ColourChange";
+import APICall from "./Components/APICall";
 import ChangeName from "./Components/ChangeName";
 import Counter from "./Components/Counter";
 import Events from "./Components/Events";
@@ -17,7 +18,8 @@ function App() {
       {/* <Timer /> */}
       {/* <Toggle /> */}
       {/* <ColourChange /> */}
-      <Parent />
+      {/* <Parent /> */}
+      <APICall />
     </>
   )
 }

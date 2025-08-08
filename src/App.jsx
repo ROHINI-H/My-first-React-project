@@ -6,7 +6,7 @@ import Events from "./Components/Events";
 import Parent from "./Components/Parent";
 import Timer from "./Components/Timer";
 import Toggle from "./Components/Toggle";
-
+import BrowserTab from "./Components/BrowserTab";
 
 function App() {
   return (
@@ -19,7 +19,8 @@ function App() {
       {/* <Toggle /> */}
       {/* <ColourChange /> */}
       {/* <Parent /> */}
-      <APICall />
+      {/* <APICall /> */}
+      <BrowserTab />
     </>
   )
 }

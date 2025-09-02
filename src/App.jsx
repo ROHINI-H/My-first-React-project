@@ -9,6 +9,7 @@ import Toggle from "./Components/Toggle";
 import BrowserTab from "./Components/BrowserTab";
 import RealTime from "./Components/RealTime";
 import Memoo from "./Components/Memoo";
+import Input from "./Components/Input";
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       {/* <APICall /> */}
       {/* <BrowserTab /> */}
       {/* <RealTime /> */}
-      <Memoo dog = "Doggy" />
+      {/* <Memoo dog = "Doggy" /> */}
+      <Input />
     </>
   )
 }

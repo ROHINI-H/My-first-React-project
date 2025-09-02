@@ -10,11 +10,12 @@ import BrowserTab from "./Components/BrowserTab";
 import RealTime from "./Components/RealTime";
 import Memoo from "./Components/Memoo";
 import Input from "./Components/Input";
+import UseMemo from "./Components/Usememo";
 
 function App() {
   return (
     <>
-      <h1>Hello from App</h1>
+      <h1>Hello from App - 12 mins</h1>
       {/* <Events /> */}
       {/* <ChangeName name="Rohini" /> */}
       {/* <Counter /> */}
@@ -26,7 +27,8 @@ function App() {
       {/* <BrowserTab /> */}
       {/* <RealTime /> */}
       {/* <Memoo dog = "Doggy" /> */}
-      <Input />
+      {/* <Input /> */}
+      <UseMemo />
     </>
   )
 }

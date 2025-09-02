@@ -8,6 +8,7 @@ import Timer from "./Components/Timer";
 import Toggle from "./Components/Toggle";
 import BrowserTab from "./Components/BrowserTab";
 import RealTime from "./Components/RealTime";
+import Memoo from "./Components/Memoo";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       {/* <Parent /> */}
       {/* <APICall /> */}
       {/* <BrowserTab /> */}
-      <RealTime />
+      {/* <RealTime /> */}
+      <Memoo dog = "Doggy" />
     </>
   )
 }

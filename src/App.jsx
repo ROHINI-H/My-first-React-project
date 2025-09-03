@@ -11,11 +11,12 @@ import RealTime from "./Components/RealTime";
 import Memoo from "./Components/Memoo";
 import Input from "./Components/Input";
 import UseMemo from "./Components/Usememo";
+import Usecallback from "./Components/Usecallback";
 
 function App() {
   return (
     <>
-      <h1>Hello from App - 12 mins</h1>
+      <h1>Hello from App - 27 mins</h1>
       {/* <Events /> */}
       {/* <ChangeName name="Rohini" /> */}
       {/* <Counter /> */}
@@ -28,7 +29,8 @@ function App() {
       {/* <RealTime /> */}
       {/* <Memoo dog = "Doggy" /> */}
       {/* <Input /> */}
-      <UseMemo />
+      {/* <UseMemo /> */}
+      <Usecallback />
     </>
   )
 }

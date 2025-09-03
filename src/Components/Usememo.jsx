@@ -8,8 +8,6 @@ function UseMemo() {
         setInp(e.target.value);
     }
 
-
-    
     const sum = useMemo(function() {
         let ans = 0;
         for(let i=0; i<=inp; i++) {

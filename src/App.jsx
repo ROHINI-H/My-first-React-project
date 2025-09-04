@@ -12,11 +12,13 @@ import Memoo from "./Components/Memoo";
 import Input from "./Components/Input";
 import UseMemo from "./Components/Usememo";
 import Usecallback from "./Components/Usecallback";
+import UseRef from "./Components/UseRef";
+import StateManagerRef from "./Components/StateManagerRef";
 
 function App() {
   return (
     <>
-      <h1>Hello from App - 27 mins</h1>
+      <h1>Hello from App</h1>
       {/* <Events /> */}
       {/* <ChangeName name="Rohini" /> */}
       {/* <Counter /> */}
@@ -30,7 +32,9 @@ function App() {
       {/* <Memoo dog = "Doggy" /> */}
       {/* <Input /> */}
       {/* <UseMemo /> */}
-      <Usecallback />
+      {/* <Usecallback /> */}
+      <UseRef />
+      <StateManagerRef />
     </>
   )
 }

@@ -18,6 +18,7 @@ import { Route, Routes } from "react-router-dom";
 import React, { lazy, Suspense } from "react";
 
 import Home from "./Components/Home";
+import Clock from "./Components/Clock";
 // import Admin from "./Components/Admin";
 // import Dashboard from "./Components/Dashboard";
 
@@ -30,6 +31,7 @@ function App() {
       <h1>Hello from App</h1>
       <Routes>
         <Route element={ <Home /> } path="/" />
+        <Route element={ <Clock /> } path="/clock" />
         <Route element={ <Suspense fallback="Admin page Loading...." > <Admin /> </Suspense> } path="/admin" />
         <Route element={ <Suspense fallback="Dashboard page Loading...." > <Dashboard /> </Suspense> } path="/dashboard" />
       </Routes>

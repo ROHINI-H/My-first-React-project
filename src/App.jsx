@@ -19,6 +19,9 @@ import React, { lazy, Suspense } from "react";
 
 import Home from "./Components/Home";
 import Clock from "./Components/Clock";
+import appStore from "./utils/appStore";
+import {Provider} from "react-redux";
+import Header from "./Components/Header";
 // import Admin from "./Components/Admin";
 // import Dashboard from "./Components/Dashboard";
 
@@ -28,14 +31,16 @@ const Dashboard = lazy(() => import("./Components/Dashboard"))
 function App() {
   return (
     <>
-      <h1>Hello from App</h1>
-      <Routes>
-        <Route element={ <Home /> } path="/" />
-        <Route element={ <Clock /> } path="/clock" />
-        <Route element={ <Suspense fallback="Admin page Loading...." > <Admin /> </Suspense> } path="/admin" />
-        <Route element={ <Suspense fallback="Dashboard page Loading...." > <Dashboard /> </Suspense> } path="/dashboard" />
-      </Routes>
-
+      <Provider store={appStore}>
+        {/* <h1 className="text-3xl">Hello from App</h1> */}
+        <Routes>
+          <Route element= {<Header />} path="/" />
+          <Route element={<Home />} path="/home" />
+          <Route element={<Clock />} path="/clock" />
+          <Route element={<Suspense fallback="Admin page Loading...." > <Admin /> </Suspense>} path="/admin" />
+          <Route element={<Suspense fallback="Dashboard page Loading...." > <Dashboard /> </Suspense>} path="/dashboard" />
+        </Routes>
+      </Provider>
       {/* <Events /> */}
       {/* <ChangeName name="Rohini" /> */}
       {/* <Counter /> */}

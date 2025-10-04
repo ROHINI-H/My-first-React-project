@@ -22,17 +22,20 @@ import Clock from "./Components/Clock";
 import appStore from "./utils/appStore";
 import {Provider} from "react-redux";
 import Header from "./Components/Header";
+import ModalComponent from "./Components/ModalComponent";
 // import Admin from "./Components/Admin";
 // import Dashboard from "./Components/Dashboard";
 
 const Admin = React.lazy(() => import("./Components/Admin"))
 const Dashboard = lazy(() => import("./Components/Dashboard"))
 
+
 function App() {
   return (
     <>
-      <Provider store={appStore}>
-        {/* <h1 className="text-3xl">Hello from App</h1> */}
+      <ModalComponent />
+      {/* <Provider store={appStore}>
+        <h1 className="text-3xl">Hello from App</h1> 
         <Routes>
           <Route element= {<Header />} path="/" />
           <Route element={<Home />} path="/home" />
@@ -40,7 +43,7 @@ function App() {
           <Route element={<Suspense fallback="Admin page Loading...." > <Admin /> </Suspense>} path="/admin" />
           <Route element={<Suspense fallback="Dashboard page Loading...." > <Dashboard /> </Suspense>} path="/dashboard" />
         </Routes>
-      </Provider>
+      </Provider> */}
       {/* <Events /> */}
       {/* <ChangeName name="Rohini" /> */}
       {/* <Counter /> */}

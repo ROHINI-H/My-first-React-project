@@ -20,9 +20,10 @@ import React, { lazy, Suspense } from "react";
 import Home from "./Components/Home";
 import Clock from "./Components/Clock";
 import appStore from "./utils/appStore";
-import {Provider} from "react-redux";
+import { Provider } from "react-redux";
 import Header from "./Components/Header";
 import ModalComponent from "./Components/ModalComponent";
+import Activetabs from "./Components/Activetabs";
 // import Admin from "./Components/Admin";
 // import Dashboard from "./Components/Dashboard";
 
@@ -33,7 +34,8 @@ const Dashboard = lazy(() => import("./Components/Dashboard"))
 function App() {
   return (
     <>
-      <ModalComponent />
+      <Activetabs />
+      {/* <ModalComponent /> */}
       {/* <Provider store={appStore}>
         <h1 className="text-3xl">Hello from App</h1> 
         <Routes>

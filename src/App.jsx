@@ -25,6 +25,7 @@ import Header from "./Components/Header";
 import ModalComponent from "./Components/ModalComponent";
 import Activetabs from "./Components/Activetabs";
 import Slideshow from "./Components/Slideshow";
+import FetchComments from "./Components/FetchComments";
 // import Admin from "./Components/Admin";
 // import Dashboard from "./Components/Dashboard";
 
@@ -35,7 +36,8 @@ const Dashboard = lazy(() => import("./Components/Dashboard"))
 function App() {
   return (
     <>
-    <Slideshow />
+    <FetchComments />
+    {/* <Slideshow /> */}
       {/* <Activetabs /> */}
       {/* <ModalComponent /> */}
       {/* <Provider store={appStore}>

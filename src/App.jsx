@@ -24,6 +24,7 @@ import { Provider } from "react-redux";
 import Header from "./Components/Header";
 import ModalComponent from "./Components/ModalComponent";
 import Activetabs from "./Components/Activetabs";
+import Slideshow from "./Components/Slideshow";
 // import Admin from "./Components/Admin";
 // import Dashboard from "./Components/Dashboard";
 
@@ -34,7 +35,8 @@ const Dashboard = lazy(() => import("./Components/Dashboard"))
 function App() {
   return (
     <>
-      <Activetabs />
+    <Slideshow />
+      {/* <Activetabs /> */}
       {/* <ModalComponent /> */}
       {/* <Provider store={appStore}>
         <h1 className="text-3xl">Hello from App</h1> 

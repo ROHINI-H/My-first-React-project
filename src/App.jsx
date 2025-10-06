@@ -27,6 +27,7 @@ import Activetabs from "./Components/Activetabs";
 import Slideshow from "./Components/Slideshow";
 import FetchComments from "./Components/FetchComments";
 import OTPGenerator from "./Components/OTPGenerator";
+import Navbar from "./Components/Navbar";
 // import Admin from "./Components/Admin";
 // import Dashboard from "./Components/Dashboard";
 
@@ -37,9 +38,10 @@ const Dashboard = lazy(() => import("./Components/Dashboard"))
 function App() {
   return (
     <>
-    <OTPGenerator />
-    {/* <FetchComments /> */}
-    {/* <Slideshow /> */}
+      <Navbar />
+      {/* <OTPGenerator /> */}
+      {/* <FetchComments /> */}
+      {/* <Slideshow /> */}
       {/* <Activetabs /> */}
       {/* <ModalComponent /> */}
       {/* <Provider store={appStore}>
